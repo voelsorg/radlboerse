@@ -6,8 +6,25 @@
 
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Ubuntu', sans-serif;
 }
-
+.navbar-inverse {
+    background-color: #6aba2f;
+    border-color: #080808;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #bb0d0f;
+}
+.navbar-inverse .navbar-brand {
+    font-family: 'impactreg',Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+    color: white;
+}
+.navbar-inverse .navbar-brand a:hover {
+    color: #bb0d0f;
+}
 .header-image {
     display: block;
     width: 100%;
@@ -24,15 +41,20 @@ body {
 }
 
 .headline h1 {
+    font-family: 'impactreg',Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
     font-size: 130px;
     background: #fff;
-    background: rgba(255,255,255,0.9);
+    background: rgba(93,178,251,0.5);
+    color: #bb0d0f;
 }
 
 .headline h2 {
     font-size: 77px;
-    background: #fff;
-    background: rgba(255,255,255,0.9);
+    color: black;
+    background: rgba(93,178,251,0.7);
+}
+.blogo {
+    margin-top: 1em;
 }
 
 .featurette-divider {
@@ -61,7 +83,7 @@ footer {
 
 iframe {
     width: 80%;
-    height: 30em;
+    // height: 30em;
 }
 
 @media(max-width:1200px) {
