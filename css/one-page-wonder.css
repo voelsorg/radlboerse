@@ -62,7 +62,7 @@ body {
 }
 
 .featurette {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .featurette-image.pull-left {
@@ -76,6 +76,22 @@ body {
 .featurette-heading {
     font-size: 50px;
 }
+.blogo-1 a,
+.blogo-2 a,
+.blogo-3 a,
+ {
+    width: 100%;
+    display: block;
+}
+.blogo-1 a {
+    text-align: left;
+}
+.blogo-2 a {
+    text-align: left;
+}
+.blogo-3 a {
+    text-align: right;
+}
 
 footer {
     margin: 50px 0;
@@ -86,6 +102,7 @@ iframe {
     // height: 30em;
 }
 
+// lg
 @media(max-width:1200px) {
     .headline h1 {
         font-size: 140px;
@@ -112,6 +129,7 @@ iframe {
     }
 }
 
+// md
 @media(max-width:991px) {
     .headline h1 {
         font-size: 105px;
@@ -142,6 +160,7 @@ iframe {
     }
 }
 
+// xs
 @media(max-width:768px) {
     .container {
         margin: 0 15px;
@@ -153,6 +172,15 @@ iframe {
 
     .featurette-heading {
         font-size: 25px;
+    }
+    .blogo-1 a {
+        text-align: left;
+    }
+    .blogo-2 a {
+        text-align: left;
+    }
+    .blogo-3 a {
+        text-align: left;
     }
 }
 
@@ -168,7 +196,7 @@ iframe {
     .featurette-divider {
         margin: 30px 0;
     }
-}
+ }
 
 @media(max-width:640px) {
     .headline {
