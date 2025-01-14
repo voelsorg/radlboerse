@@ -4,26 +4,33 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ :root {
+     --ppoe-red: #9D2632;
+     --ppoe-grau: #4D4F5A;
+     --ppoe-caex: #0B4697;
+ }
+
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 .navbar-inverse {
-    background-color: #6aba2f;
+    background-color: var(--ppoe-caex);
     border-color: #080808;
 }
 .navbar-inverse .navbar-nav > li > a {
     color: white;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #bb0d0f;
+    color: var(--ppoe-red);
 }
 .navbar-inverse .navbar-brand {
     font-family: 'impactreg',Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
     color: white;
+    font-weight: 700;
 }
 .navbar-inverse .navbar-brand a:hover {
-    color: #bb0d0f;
+    color: var(--ppoe-red);
 }
 .header-image {
     display: block;
@@ -41,17 +48,21 @@ body {
 }
 
 .headline h1 {
-    font-family: 'impactreg',Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
-    font-size: 130px;
-    background: #fff;
-    background: rgba(93,178,251,0.5);
-    color: #bb0d0f;
+    font-size: 500%;
+    font-weight: 700;
+    background: var(--ppoe-red);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .headline h2 {
-    font-size: 77px;
-    color: black;
-    background: rgba(93,178,251,0.7);
+    font-size: 300%;
+    color: white;
+    background: var(--ppoe-grau);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .blogo {
     margin-top: 1em;
@@ -104,13 +115,13 @@ iframe {
 
 // lg
 @media(max-width:1200px) {
-    .headline h1 {
+    /* .headline h1 {
         font-size: 140px;
     }
 
     .headline h2 {
         font-size: 63px;
-    }
+    } */
 
     .featurette-divider {
         margin: 50px 0;
