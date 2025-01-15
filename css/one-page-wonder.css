@@ -7,6 +7,7 @@
 :root {
     --ppoe-red: #9D2632;
     --ppoe-grau: #4D4F5A;
+    --ppoe-orange: #EB5C37;
     --ppoe-caex: #0B4697;
 }
 
@@ -14,6 +15,16 @@ body {
     margin-top: 50px;
     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: 'Kumbh Sans', sans-serif;
+}
+h2.featurette-heading {
+    color: var(--ppoe-red);
+    padding-bottom: 1em;
+    line-height: 1.2;
+}
+h2.featurette-heading .slogan {
+    font-family: 'Gloria Hallelujah';
+    color: var(--ppoe-grau);
+    transform: rotate(-2deg);
 }
 
 .navbar-inverse {
