@@ -65,7 +65,8 @@ body {
     padding-bottom: 10px;
 }
 .blogo {
-    margin-top: 1em;
+    margin-top: 4em;
+    margin-bottom: 6em;
 }
 
 .featurette-divider {
@@ -94,8 +95,15 @@ body {
     width: 100%;
     display: block;
 }
+.blogo-1 {
+    padding-left: 0;
+    vertical-align: middle;
+}
 .blogo-1 a {
     text-align: left;
+}
+.blogo-2 {
+    padding-right: 0;
 }
 .blogo-2 a {
     text-align: left;
