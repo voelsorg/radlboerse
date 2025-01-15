@@ -4,34 +4,45 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
- :root {
-     --ppoe-red: #9D2632;
-     --ppoe-grau: #4D4F5A;
-     --ppoe-caex: #0B4697;
- }
+:root {
+    --ppoe-red: #9D2632;
+    --ppoe-grau: #4D4F5A;
+    --ppoe-caex: #0B4697;
+}
 
 body {
-    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    margin-top: 50px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: 'Kumbh Sans', sans-serif;
 }
+
 .navbar-inverse {
     background-color: var(--ppoe-caex);
     border-color: #080808;
 }
-.navbar-inverse .navbar-nav > li > a {
+
+.navbar-inverse .navbar-nav>li>a {
     color: white;
 }
-.navbar-inverse .navbar-nav > li > a:hover {
+
+.navbar-inverse .navbar-nav>li>a:hover {
     color: var(--ppoe-red);
 }
+
 .navbar-inverse .navbar-brand {
-    font-family: 'impactreg',Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif;
+    font-family: 'impactreg', Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
     color: white;
     font-weight: 700;
 }
+
 .navbar-inverse .navbar-brand a:hover {
     color: var(--ppoe-red);
 }
+
+header {
+    margin-bottom: 4em;
+}
+
 .header-image {
     display: block;
     width: 100%;
@@ -64,19 +75,17 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.blogo {
-    margin-top: 4em;
-    margin-bottom: 6em;
-}
 
 .featurette-divider {
     margin: 80px 0;
 }
 
 .featurette {
-    // overflow: hidden;
+    /* overflow: hidden; */
 }
-
+.first-featurette {
+    padding-top: 3em;
+}
 .featurette-image.pull-left {
     margin-right: 40px;
 }
@@ -88,26 +97,40 @@ body {
 .featurette-heading {
     font-size: 50px;
 }
+
+.blogo {
+    margin-bottom: 2em;
+}
+
 .blogo-1 a,
 .blogo-2 a,
-.blogo-3 a,
- {
+.blogo-3 a {
     width: 100%;
+    max-width: 400px;
     display: block;
 }
+
 .blogo-1 {
     padding-left: 0;
-    vertical-align: middle;
 }
+
 .blogo-1 a {
     text-align: left;
 }
+
+.blogo-1 a img {
+    text-align: left;
+    width: 100%;
+}
+
 .blogo-2 {
     padding-right: 0;
 }
+
 .blogo-2 a {
     text-align: left;
 }
+
 .blogo-3 a {
     text-align: right;
 }
@@ -118,10 +141,9 @@ footer {
 
 iframe {
     width: 80%;
-    // height: 30em;
 }
 
-// lg
+/* lg */
 @media(max-width:1200px) {
     /* .headline h1 {
         font-size: 140px;
@@ -148,7 +170,7 @@ iframe {
     }
 }
 
-// md
+/* md */
 @media(max-width:991px) {
     .headline h1 {
         font-size: 105px;
@@ -179,7 +201,7 @@ iframe {
     }
 }
 
-// xs
+/* xs */
 @media(max-width:768px) {
     .container {
         margin: 0 15px;
@@ -192,14 +214,13 @@ iframe {
     .featurette-heading {
         font-size: 25px;
     }
-    .blogo-1 a {
-        text-align: left;
+
+    div.blogo.col-sm-6.col-xs-12.blogo-1 {
+        padding-right: 0;
     }
-    .blogo-2 a {
-        text-align: left;
-    }
-    .blogo-3 a {
-        text-align: left;
+
+    div.blogo.col-sm-6.col-xs-12.blogo-2 {
+        padding-left: 0;
     }
 }
 
@@ -215,7 +236,7 @@ iframe {
     .featurette-divider {
         margin: 30px 0;
     }
- }
+}
 
 @media(max-width:640px) {
     .headline {
