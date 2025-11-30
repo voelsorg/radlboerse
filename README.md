@@ -1,29 +1,50 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/)
+# Völser Radl-Börse
 
-**Angepasst für die Völser Radl Börse**
+Website für die Völser Radl-Börse – ein Fahrrad-Tauschmarkt organisiert von der [Pfadfinder*innengruppe Völs](https://pfadivoels.at/).
 
-[One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/) is a basic one page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+**Live**: https://radlboerse.voels.org
 
-## Getting Started
+## Über das Event
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git`
-* Fork the repo
+Die Völser Radl-Börse findet jährlich am CYTA-Gelände in Völs (Tirol) statt. Besucher können gebrauchte Fahrräder kaufen oder ihre eigenen Räder zum Verkauf anbieten. Der Reinerlös kommt der ehrenamtlichen Jugendarbeit der Pfadfinder*innen zugute.
 
-## Bugs and Issues
+## Technologie
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/).
+- **Bootstrap 5.3.x** – CSS Framework
+- **PPOE Theme** – Custom CSS nach [PPOE Brand Guidelines](https://ppoe.at/service/ressourcen/design/)
+- **GitHub Pages** – Hosting
 
-## Creator
+## Lokale Entwicklung
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+```bash
+# Repository klonen
+git clone https://github.com/voelsorg/radlboerse.git
+cd radlboerse
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+# Lokalen Server starten (optional)
+python3 -m http.server 8000
+```
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Dann http://localhost:8000 im Browser öffnen.
 
-## Copyright and License
+## Jährliche Aktualisierung
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/gh-pages/LICENSE) license.
+Vor jedem Event müssen folgende Stellen in `index.html` aktualisiert werden:
+
+1. **Event-Datum** im Hero-Bereich (h1, h2)
+2. **JSON-LD Structured Data** (startDate, endDate)
+3. **Meta Description**
+4. **Spendenabgabe-Frist** im Spenden-Bereich
+5. **Copyright-Jahr** im Footer
+6. **Telefonnummer** falls geändert
+
+## Lizenz
+
+Basierend auf [One Page Wonder](https://startbootstrap.com/template/one-page-wonder) von Start Bootstrap.
+
+Code unter [MIT Lizenz](LICENSE).
+
+## Kontakt
+
+- E-Mail: radlboerse@gmail.com
+- Website: https://pfadivoels.at
